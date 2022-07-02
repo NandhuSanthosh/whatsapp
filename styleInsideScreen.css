@@ -1,0 +1,235 @@
+.screen{
+    display:flex;
+    flex-direction:column;
+    font-family:Helvetica;  
+
+}
+#chat-screen{
+    display:none;
+}
+.notification-bar{
+    background-color:#00443c;
+    height:20px;
+    font-size: 11px;
+    padding:0pc 5px;
+    color:#387e76ef;
+
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+.notification-right{
+    margin-left:auto;
+    display:flex;
+    gap:4px;
+}
+.whatsapp-header{
+    background-color: #075E54;
+    height:81px;
+    color:white;
+
+    display: flex;
+    flex-direction: column;
+}
+.battery{
+    display:flex;
+    align-items: center;
+    gap:.7px;
+}
+.battery-guage{
+    height:10px;
+    width: 15px;
+    border: 1px solid #387e76ef;
+    border-radius:2px;
+    padding:.5px .5px; 
+}
+.battery-level{
+    width:30%;
+    height:100%;
+    background-color:#387e76ef;
+
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
+}
+.battery-possitive-side{
+    height:7px;
+    background-color:#387e76ef;
+    width:1.5px;
+    border-radius:1px;
+}
+.network-meter{
+    display:flex;
+    gap:1px;
+    align-items: baseline;
+    position:relative;
+
+    display: flex;
+    justify-content: right;
+}
+.network-meter-bar {
+    width:1.5px;
+    flex-shrink: 0;
+    border-radius: 1px;
+    background-color: #387e76ef ;
+}
+.network-meter-bar:nth-child(1){
+    height:2px;
+}
+.network-meter-bar:nth-child(2){
+    height:4px;
+}
+.network-meter-bar:nth-child(3){
+    height:6px;
+}
+.network-meter-bar:nth-child(4){
+    height:8px;
+}
+.network-meter-bar:nth-child(5){
+    height:10px;
+}
+.network-gen{
+    position:absolute;
+    font-size:6px;
+    top:-2;
+    left:-2;
+    font-weight:bold;
+}
+.whatsapp-header-padding{
+    padding:15px 10px 0 10px;
+}
+.whatsapp-header-rowOne{
+    display:flex;
+    margin-bottom:20px;
+
+    position:relative;
+}
+.whatsapp-header-rowOne-left{
+    margin-right:auto;
+}
+.whatsapp-header-rowOne-left p{
+    font-weight:bold;
+}
+.whatsapp-header-rowOne-right{
+    display:flex;
+    gap:25px;
+    align-items:center;
+}
+.svg-color-white{
+    /* fill: white; */
+    filter:invert(1);
+    /* margin-right:18px; */
+}
+.whatsapp-header-rowTwo{
+    display:flex;
+    font-size:12px;
+    font-weight: bold;
+    padding-right:10px;
+    gap:40px;
+    margin-bottom:auto;
+}
+.whatsapp-sections{
+    flex:1;
+    display:flex;
+    justify-content: space-between;
+}
+a{
+    text-decoration:none;
+    color:white;
+}
+.whatsapp-section-indicator{
+    background-color: #075E54;
+    display:grid;
+    grid-template-columns: 40px repeat(2,1fr) .90fr;
+    grid-template-areas: 
+        'one two three four';
+}
+.section-indicator{
+    background-color: white;
+    height:3px;
+   grid-area:two;
+   box-shadow : 0px .1px 0 0px black;
+   
+}
+.pd-class{
+    padding-top:10px;
+}
+
+
+
+/* CHAT TILE */
+.whatsapp-chat-tile{
+    display:grid;
+    grid-template-columns: max-content 1fr;
+}
+.whatsapp-chat-tile:hover{
+    background-color: rgb(240, 240, 240);
+}
+.whatsapp-dp{
+    /* background-color: lightblue; */
+    padding:5px 0px 5px 10px;
+}
+.whatsapp-dp img{
+    width:40px;
+    height:40px;
+    object-fit: cover;
+    object-position:center;
+    border-radius: 50%;;
+}
+.name-details{
+    margin:10px 10px 0px 10px;
+    border-bottom:1px solid rgb(227, 227, 227);
+}
+.justify-space-between{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.last-msg-time{
+    font-size:10px;
+    color:grey;
+}
+.justify-space-between p{
+    font-size:10px;
+    color:grey;
+}
+.notification-number{
+    padding:4px 6px;
+    background-color: #25D366;
+    border-radius:50%;
+    color:white;
+    font-size:8px;
+}
+.justify-space-between:nth-child(2){
+    margin-bottom: 10px;
+}
+#chat-content-primary-phone{
+    background-image:url(Images/download.jpg);
+}
+
+#settings-container{
+    height: 580px;
+    width:100%;
+    position:absolute;
+    display:none;
+}
+#chat-list-settings{
+    border-radius:4px;
+    width:200px;
+    overflow:hidden;
+
+    background-color: white;
+    padding:10px 0px;
+    position:absolute;
+    top:0;
+    right:-6px;
+    box-shadow:0px 0px 40px rgba(0,0,0,.3);
+
+}
+.settings-list{
+    font-size:14px;
+    padding:15px  15px;            
+    color:black;
+}
+.settings-list:hover{
+    background-color: rgb(241, 241, 241);
+}
